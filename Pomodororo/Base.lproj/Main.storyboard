@@ -1,24 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tdp-xp-lWz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--LaunchS View Controller-->
+        <scene sceneID="J2w-FI-bTO">
+            <objects>
+                <viewController id="Tdp-xp-lWz" customClass="LaunchSViewController" customModule="Pomodororo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sMZ-FX-uaV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tomato.png" translatesAutoresizingMaskIntoConstraints="NO" id="oTc-na-rtS">
+                                <rect key="frame" x="44" y="271" width="336" height="354"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pomodororo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHB-F1-2GH" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                                <rect key="frame" x="44" y="123" width="326" height="48"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                <color key="textColor" red="0.84313725490000002" green="0.35686274509999999" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BLF-WP-x9w"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BLF-WP-x9w" firstAttribute="bottom" secondItem="oTc-na-rtS" secondAttribute="bottom" constant="237" id="Haz-jU-OV9"/>
+                            <constraint firstItem="HHB-F1-2GH" firstAttribute="centerX" secondItem="sMZ-FX-uaV" secondAttribute="centerX" id="Wu2-Py-upV"/>
+                            <constraint firstItem="oTc-na-rtS" firstAttribute="leading" secondItem="HHB-F1-2GH" secondAttribute="leading" id="Zo4-oA-ie2"/>
+                            <constraint firstItem="HHB-F1-2GH" firstAttribute="top" secondItem="BLF-WP-x9w" secondAttribute="top" constant="79" id="iu7-K9-sYM"/>
+                            <constraint firstItem="oTc-na-rtS" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="HHB-F1-2GH" secondAttribute="trailing" constant="10" id="nN1-Wq-5Dx"/>
+                            <constraint firstItem="oTc-na-rtS" firstAttribute="centerY" secondItem="sMZ-FX-uaV" secondAttribute="centerY" id="t4m-cO-QRd"/>
+                            <constraint firstItem="HHB-F1-2GH" firstAttribute="leading" secondItem="BLF-WP-x9w" secondAttribute="leading" constant="44" id="zId-sL-Zmb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="launchText" destination="HHB-F1-2GH" id="sU6-k0-OR4"/>
+                        <outlet property="tomatoImage" destination="oTc-na-rtS" id="yeg-Cw-wKJ"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="mainScreen" id="Bay-SX-U23"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YeC-uz-ZDh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775.36231884057975" y="96.428571428571431"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="Pomodororo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="E3t-UR-qk9">
+                                <rect key="frame" x="30" y="219" width="354" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAs-oX-fjL">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="100"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="20.circle.fill" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="71" scale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="timeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fdr-4R-q3o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdZ-o1-iwF">
+                                        <rect key="frame" x="122" y="0.0" width="110" height="100"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="30.circle.fill" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="71" scale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="timeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xOh-hT-Wk5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbt-KR-iiF">
+                                        <rect key="frame" x="244" y="0.0" width="110" height="100"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal">
+                                            <imageReference key="image" image="40.circle.fill" catalog="system" symbolScale="large"/>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="71" scale="large"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="timeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7fs-jK-Zrj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="fwK-pH-D6n"/>
+                                </constraints>
+                            </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7VL-Hz-MQN">
+                                <rect key="frame" x="30" y="621" width="354" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="xfy-Mb-Myn"/>
+                                </constraints>
+                                <color key="progressTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="trackTintColor" systemColor="opaqueSeparatorColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </progressView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.35686274509803922" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="E3t-UR-qk9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="EP0-dj-uCE"/>
+                            <constraint firstItem="7VL-Hz-MQN" firstAttribute="trailing" secondItem="E3t-UR-qk9" secondAttribute="trailing" id="dhG-2c-fWZ"/>
+                            <constraint firstItem="7VL-Hz-MQN" firstAttribute="leading" secondItem="E3t-UR-qk9" secondAttribute="leading" id="iq9-Ql-gbI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E3t-UR-qk9" secondAttribute="trailing" constant="30" id="n97-Jc-nRy"/>
+                            <constraint firstItem="E3t-UR-qk9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="175" id="sXN-k5-w1V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7VL-Hz-MQN" secondAttribute="bottom" constant="226" id="yYn-nu-yQh"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="h9Q-tS-lmR"/>
+                    <connections>
+                        <outlet property="progressBarView" destination="7VL-Hz-MQN" id="lmu-zV-fWI"/>
+                        <outlet property="tenminBut" destination="VAs-oX-fjL" id="VLb-qn-Vjt"/>
+                        <outlet property="thirtyMinBut" destination="gbt-KR-iiF" id="B5P-0L-8Rm"/>
+                        <outlet property="twentyMinBut" destination="bdZ-o1-iwF" id="A8P-8y-N47"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="20.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="30.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="40.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="tomato.png" width="384" height="384"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -3,18 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E358A63267F6B9D00A84B05 /* LaunchSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E358A62267F6B9D00A84B05 /* LaunchSViewController.swift */; };
 		5E77083A267F2DAD00AFAE7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E770839267F2DAD00AFAE7A /* AppDelegate.swift */; };
 		5E77083C267F2DAD00AFAE7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E77083B267F2DAD00AFAE7A /* SceneDelegate.swift */; };
 		5E77083E267F2DAD00AFAE7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E77083D267F2DAD00AFAE7A /* ViewController.swift */; };
 		5E770841267F2DAD00AFAE7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E77083F267F2DAD00AFAE7A /* Main.storyboard */; };
 		5E770843267F2DAE00AFAE7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E770842267F2DAE00AFAE7A /* Assets.xcassets */; };
-		5E770846267F2DAE00AFAE7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E770844267F2DAE00AFAE7A /* LaunchScreen.storyboard */; };
 		5E770851267F2DAE00AFAE7A /* PomodororoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E770850267F2DAE00AFAE7A /* PomodororoTests.swift */; };
 		5E77085C267F2DAE00AFAE7A /* PomodororoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E77085B267F2DAE00AFAE7A /* PomodororoUITests.swift */; };
+		5E77086A267F469100AFAE7A /* timeup.wav in Resources */ = {isa = PBXBuildFile; fileRef = 5E770869267F469100AFAE7A /* timeup.wav */; };
+		5E77086C267F5A0C00AFAE7A /* tomato.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E77086B267F5A0C00AFAE7A /* tomato.png */; };
+		7DF6AF08F7057471BCED159A /* Pods_Pomodororo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACD1EFDCC955D7FBCCA8941 /* Pods_Pomodororo.framework */; };
+		83E07F7BD9B6A2D54BD3AE2B /* Pods_PomodororoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66110F8131A152A664854173 /* Pods_PomodororoTests.framework */; };
+		B3C345C0A943E8362350FB8A /* Pods_Pomodororo_PomodororoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C5AC19980CF323217CB181 /* Pods_Pomodororo_PomodororoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3ACD1EFDCC955D7FBCCA8941 /* Pods_Pomodororo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomodororo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ECAC3651F0FB8FB6317C255 /* Pods-Pomodororo-PomodororoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomodororo-PomodororoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Pomodororo-PomodororoUITests/Pods-Pomodororo-PomodororoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E358A62267F6B9D00A84B05 /* LaunchSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchSViewController.swift; sourceTree = "<group>"; };
 		5E770836267F2DAD00AFAE7A /* Pomodororo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodororo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E770839267F2DAD00AFAE7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E77083B267F2DAD00AFAE7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5E77083D267F2DAD00AFAE7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5E770840267F2DAD00AFAE7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E770842267F2DAE00AFAE7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5E770845267F2DAE00AFAE7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E770847267F2DAE00AFAE7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E77084C267F2DAE00AFAE7A /* PomodororoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodororoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E770850267F2DAE00AFAE7A /* PomodororoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodororoTests.swift; sourceTree = "<group>"; };
@@ -49,6 +56,15 @@
 		5E770857267F2DAE00AFAE7A /* PomodororoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodororoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E77085B267F2DAE00AFAE7A /* PomodororoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodororoUITests.swift; sourceTree = "<group>"; };
 		5E77085D267F2DAE00AFAE7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E770869267F469100AFAE7A /* timeup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = timeup.wav; sourceTree = "<group>"; };
+		5E77086B267F5A0C00AFAE7A /* tomato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tomato.png; sourceTree = "<group>"; };
+		634BE0687A6E2B36C1009C5D /* Pods-Pomodororo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomodororo.release.xcconfig"; path = "Target Support Files/Pods-Pomodororo/Pods-Pomodororo.release.xcconfig"; sourceTree = "<group>"; };
+		66110F8131A152A664854173 /* Pods_PomodororoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PomodororoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A804E4EFA1214B992D295DA /* Pods-Pomodororo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomodororo.debug.xcconfig"; path = "Target Support Files/Pods-Pomodororo/Pods-Pomodororo.debug.xcconfig"; sourceTree = "<group>"; };
+		C0C5AC19980CF323217CB181 /* Pods_Pomodororo_PomodororoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomodororo_PomodororoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD26AA45377C28611226C384 /* Pods-PomodororoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomodororoTests.release.xcconfig"; path = "Target Support Files/Pods-PomodororoTests/Pods-PomodororoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1CF4A6B939ACF5212981683 /* Pods-Pomodororo-PomodororoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomodororo-PomodororoUITests.release.xcconfig"; path = "Target Support Files/Pods-Pomodororo-PomodororoUITests/Pods-Pomodororo-PomodororoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD5C1C0F2918AB64406C161F /* Pods-PomodororoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PomodororoTests.debug.xcconfig"; path = "Target Support Files/Pods-PomodororoTests/Pods-PomodororoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DF6AF08F7057471BCED159A /* Pods_Pomodororo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83E07F7BD9B6A2D54BD3AE2B /* Pods_PomodororoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C345C0A943E8362350FB8A /* Pods_Pomodororo_PomodororoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		130D1ED2433250285E0EB442 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A804E4EFA1214B992D295DA /* Pods-Pomodororo.debug.xcconfig */,
+				634BE0687A6E2B36C1009C5D /* Pods-Pomodororo.release.xcconfig */,
+				4ECAC3651F0FB8FB6317C255 /* Pods-Pomodororo-PomodororoUITests.debug.xcconfig */,
+				E1CF4A6B939ACF5212981683 /* Pods-Pomodororo-PomodororoUITests.release.xcconfig */,
+				FD5C1C0F2918AB64406C161F /* Pods-PomodororoTests.debug.xcconfig */,
+				DD26AA45377C28611226C384 /* Pods-PomodororoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5E77082D267F2DAD00AFAE7A = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,8 @@
 				5E77084F267F2DAE00AFAE7A /* PomodororoTests */,
 				5E77085A267F2DAE00AFAE7A /* PomodororoUITests */,
 				5E770837267F2DAD00AFAE7A /* Products */,
+				130D1ED2433250285E0EB442 /* Pods */,
+				A5FD48D2F82F4B7795FE50D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,9 +136,11 @@
 				5E770839267F2DAD00AFAE7A /* AppDelegate.swift */,
 				5E77083B267F2DAD00AFAE7A /* SceneDelegate.swift */,
 				5E77083D267F2DAD00AFAE7A /* ViewController.swift */,
+				5E358A62267F6B9D00A84B05 /* LaunchSViewController.swift */,
 				5E77083F267F2DAD00AFAE7A /* Main.storyboard */,
 				5E770842267F2DAE00AFAE7A /* Assets.xcassets */,
-				5E770844267F2DAE00AFAE7A /* LaunchScreen.storyboard */,
+				5E77086B267F5A0C00AFAE7A /* tomato.png */,
+				5E770869267F469100AFAE7A /* timeup.wav */,
 				5E770847267F2DAE00AFAE7A /* Info.plist */,
 			);
 			path = Pomodororo;
@@ -128,6 +164,16 @@
 			path = PomodororoUITests;
 			sourceTree = "<group>";
 		};
+		A5FD48D2F82F4B7795FE50D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3ACD1EFDCC955D7FBCCA8941 /* Pods_Pomodororo.framework */,
+				C0C5AC19980CF323217CB181 /* Pods_Pomodororo_PomodororoUITests.framework */,
+				66110F8131A152A664854173 /* Pods_PomodororoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E770860267F2DAE00AFAE7A /* Build configuration list for PBXNativeTarget "Pomodororo" */;
 			buildPhases = (
+				198516CB7C20E9C338403B57 /* [CP] Check Pods Manifest.lock */,
 				5E770832267F2DAD00AFAE7A /* Sources */,
 				5E770833267F2DAD00AFAE7A /* Frameworks */,
 				5E770834267F2DAD00AFAE7A /* Resources */,
+				A98995A23F611CCF4E1DDAFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E770863267F2DAE00AFAE7A /* Build configuration list for PBXNativeTarget "PomodororoTests" */;
 			buildPhases = (
+				906EADFED5DB78D7BBA881DA /* [CP] Check Pods Manifest.lock */,
 				5E770848267F2DAE00AFAE7A /* Sources */,
 				5E770849267F2DAE00AFAE7A /* Frameworks */,
 				5E77084A267F2DAE00AFAE7A /* Resources */,
@@ -170,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E770866267F2DAE00AFAE7A /* Build configuration list for PBXNativeTarget "PomodororoUITests" */;
 			buildPhases = (
+				B2CFADE58D06EABAE58B9089 /* [CP] Check Pods Manifest.lock */,
 				5E770853267F2DAE00AFAE7A /* Sources */,
 				5E770854267F2DAE00AFAE7A /* Frameworks */,
 				5E770855267F2DAE00AFAE7A /* Resources */,
+				34F92BA758932032D66FCDDE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,8 +282,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E770846267F2DAE00AFAE7A /* LaunchScreen.storyboard in Resources */,
+				5E77086C267F5A0C00AFAE7A /* tomato.png in Resources */,
 				5E770843267F2DAE00AFAE7A /* Assets.xcassets in Resources */,
+				5E77086A267F469100AFAE7A /* timeup.wav in Resources */,
 				5E770841267F2DAD00AFAE7A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +305,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		198516CB7C20E9C338403B57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pomodororo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34F92BA758932032D66FCDDE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomodororo-PomodororoUITests/Pods-Pomodororo-PomodororoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomodororo-PomodororoUITests/Pods-Pomodororo-PomodororoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pomodororo-PomodororoUITests/Pods-Pomodororo-PomodororoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		906EADFED5DB78D7BBA881DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PomodororoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A98995A23F611CCF4E1DDAFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomodororo/Pods-Pomodororo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pomodororo/Pods-Pomodororo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pomodororo/Pods-Pomodororo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2CFADE58D06EABAE58B9089 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pomodororo-PomodororoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5E770832267F2DAD00AFAE7A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -261,6 +416,7 @@
 				5E77083E267F2DAD00AFAE7A /* ViewController.swift in Sources */,
 				5E77083A267F2DAD00AFAE7A /* AppDelegate.swift in Sources */,
 				5E77083C267F2DAD00AFAE7A /* SceneDelegate.swift in Sources */,
+				5E358A63267F6B9D00A84B05 /* LaunchSViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +458,6 @@
 				5E770840267F2DAD00AFAE7A /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5E770844267F2DAE00AFAE7A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E770845267F2DAE00AFAE7A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -366,7 +514,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +569,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,6 +581,7 @@
 		};
 		5E770861267F2DAE00AFAE7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A804E4EFA1214B992D295DA /* Pods-Pomodororo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +601,7 @@
 		};
 		5E770862267F2DAE00AFAE7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 634BE0687A6E2B36C1009C5D /* Pods-Pomodororo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +621,7 @@
 		};
 		5E770864267F2DAE00AFAE7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD5C1C0F2918AB64406C161F /* Pods-PomodororoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +644,7 @@
 		};
 		5E770865267F2DAE00AFAE7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD26AA45377C28611226C384 /* Pods-PomodororoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +667,7 @@
 		};
 		5E770867267F2DAE00AFAE7A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ECAC3651F0FB8FB6317C255 /* Pods-Pomodororo-PomodororoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +688,7 @@
 		};
 		5E770868267F2DAE00AFAE7A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1CF4A6B939ACF5212981683 /* Pods-Pomodororo-PomodororoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

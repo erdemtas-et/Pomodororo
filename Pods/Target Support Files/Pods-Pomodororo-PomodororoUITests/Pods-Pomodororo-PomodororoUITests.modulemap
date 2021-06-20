@@ -1,0 +1,6 @@
+framework module Pods_Pomodororo_PomodororoUITests {
+  umbrella header "Pods-Pomodororo-PomodororoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
